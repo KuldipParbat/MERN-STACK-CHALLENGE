@@ -37,10 +37,12 @@ mongod
 4.Initialize the database with sample data:
 node server.js
 
-###Frontend Setup
+### Frontend Setup
 
 1.Install frontend dependencies:
 npm install
 
 2.Start the React application:
 npm start
+
+# THANK YOU()
