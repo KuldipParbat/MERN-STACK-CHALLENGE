@@ -1,0 +1,154 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #444;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .label {
+    font-weight: bold;
+  }
+  
+  select {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 100%;
+    max-width: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: border-color 0.3s;
+  }
+  
+  select:focus {
+    border-color: #007BFF; /* Change border color on focus */
+  }
+  
+  .chart-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Increased shadow for depth */
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 900px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-size: 20px; /* Font size for the table */
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #007BFF;
+    color: white;
+  }
+  
+  td {
+    background-color: #fff;
+  }
+  
+  tr:nth-child(even) td {
+    background-color: #f9f9f9;
+  }
+  
+  tr:hover td {
+    background-color: #e9ecef; /* Light gray on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+  }
+  
+  button {
+    margin: 5px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    font-size: 20px; /* Increased button font size */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition */
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+  }
+  
+  button:hover:not(:disabled) {
+    background-color: #0056b3; /* Darker blue on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+  }
+  
+  /* Footer Section for Name */
+  .footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 20px; /* Font size for the footer */
+    color: #555;
+  }
+  
+  /* Responsive design */
+  .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .pie-bar-container {
+    display: flex; /* Flexbox for the charts */
+    justify-content: center; /* Center align charts */
+    margin-top: 20px;
+  }
+  
+  .pie-chart, .bar-chart {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for charts */
+    padding: 20px;
+    margin: 10px; /* Space between charts */
+    flex: 1; /* Allow charts to grow */
+    max-width: 400px; /* Set max width for charts */
+  }
+  
+  @media (max-width: 600px) {
+    table {
+      font-size: 16px; /* Smaller font size for small screens */
+    }
+  
+    select {
+      max-width: 100%; /* Full width on small screens */
+    }
+  
+    .container {
+      flex-direction: column; /* Stack items on small screens */
+    }
+  
+    .pie-chart, .bar-chart {
+      max-width: 100%; /* Full width on small screens */
+    }
+  }
+  
